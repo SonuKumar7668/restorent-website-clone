@@ -1,0 +1,77 @@
+/* css reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* color: white; */
+}
+/* variables  */
+:root{
+    --navbar:50px;
+}
+#nav{
+    /* border: 2px solid red; */
+    /* color: white; */
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+/* logo and image  */
+#img{
+    /* width: 65px; */
+    height: 65px;
+    margin: 0px 15px;
+    border-radius: 20px;
+}
+#logo{
+    /* height: 30px; */
+    margin: 30px 30px;
+}
+/* list style  */
+#nav ul{
+    display: flex;
+    list-style: none;
+    padding: 10px 10px;
+    /* font-size: 1.2rem; */
+
+}
+#nav ul li a{
+    color: white;
+    display: block;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+#nav::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* hover property */
+#nav ul li a:hover{
+    color: black;
+    background-color: white;
+    /* text-decoration: underline; */
+}
+/* home section  */
+#home{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('/img/food_background.jpg');
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
