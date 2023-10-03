@@ -75,3 +75,11 @@
     z-index: -1;
     opacity: 0.4;
 }
+.button{
+    background-color: blueviolet;
+    color: white;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
